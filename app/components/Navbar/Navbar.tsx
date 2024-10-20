@@ -5,7 +5,7 @@ import React from "react";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import { navigationData } from "../../data/navigationData";
-import SocialMedia from "./SocialMedia";
+import NavbarSocialMedia from "./NavbarSocialMedia";
 
 const navigation = navigationData;
 
@@ -63,7 +63,7 @@ const Navbar = () => {
             {/* SOCIAL MEDIA ICONS */}
 
             <div className="hidden lg:block">
-              <SocialMedia />
+              <NavbarSocialMedia />
             </div>
 
             {/* DRAWER FOR MOBILE VIEW */}
