@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { navigationData } from "../../data/navigationData";
-import SocialMedia from "./SocialMedia";
+import NavbarSocialMedia from "./NavbarSocialMedia";
 
 const navigation = navigationData;
 
@@ -31,7 +31,7 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
-            <SocialMedia />
+            <NavbarSocialMedia />
           </div>
         </div>
       </div>
