@@ -17,13 +17,13 @@ const Banner = () => {
           <div className="text-center mt-5">
             <button
               type="button"
-              className="text-15px text-white font-medium bg-blue py-5 px-9 mt-2 leafbutton"
+              className="text-15px text-white font-medium bg-cinnabar-600 py-5 px-9 mt-2 leafbutton"
             >
               See our portfolio
             </button>
             <button
               type="button"
-              className="text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-16 border border-lightgrey leafbutton"
+              className="text-15px ml-4 mt-2 text-cinnabar-600 transition duration-150 ease-in-out hover:text-white hover:bg-cinnabar-600 font-medium py-5 px-16 border border-lightgrey leafbutton"
             >
               More info
             </button>

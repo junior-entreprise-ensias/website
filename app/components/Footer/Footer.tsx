@@ -8,14 +8,14 @@ const year = new Date().getFullYear();
 
 const footer = () => {
     return (
-        <div className="bg-darkblue mt-40">
+        <div className="bg-cinnabar-950 mt-40">
             <div className="mx-auto max-w-2xl pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/assets/footer/logo.svg'} alt="logo" className='pb-8' />
+                        <img src={'/assets/logo/logo_inverted.png'} width={160} alt="logo" className='pb-8' />
                         <FooterSocialMedia />
                     </div>
 
@@ -38,15 +38,15 @@ const footer = () => {
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <Image src={'/assets/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">ENSIAS, Rabat, Morocco</h5>
+                            <h5 className="text-base font-normal text-white">ENSIAS, Rabat, Morocco</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+ 212 6 00 00 00 00</h5>
+                            <h5 className="text-base font-normal text-white">+ 212 6 00 00 00 00</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">ensias.je@gmail.com</h5>
+                            <h5 className="text-base font-normal text-white">ensias.je@gmail.com</h5>
                         </div>
                     </div>
 
