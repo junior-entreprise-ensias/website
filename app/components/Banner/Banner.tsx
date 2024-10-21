@@ -6,10 +6,10 @@ const Banner = () => {
       <div className="px-6 lg:px-8">
         <div className="mx-auto max-w-7xl pt-16 sm:pt-20 pb-20 banner-image">
           <div className="text-center">
-            <h1 className="text-4xl font-semibold text-navyblue sm:text-5xl lg:text-7xl md:4px lh-96">
+            <h1 className="text-4xl font-semibold text-navyred sm:text-5xl lg:text-7xl md:4px lh-96">
               Solve problem with an <br /> integrated agency.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-bluegray">
+            <p className="mt-6 text-lg leading-8 text-redgray">
               Ehya is the Instagram analytics platform teams use to stay focused
               on the goals, track <br /> engagement for report your business .
             </p>
