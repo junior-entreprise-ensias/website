@@ -26,12 +26,14 @@ const Navbar = () => {
 
               <div className="flex flex-shrink-0 items-center">
                 <img
-                  className="block h-12 w-40 lg:hidden"
+                  width={80}
+                  className="block lg:hidden"
                   src={"/assets/logo/logo.png"}
                   alt="dsign-logo"
                 />
                 <img
-                  className="hidden h-12 w-full lg:block"
+                  width={80}
+                  className="hidden lg:block"
                   src={"/assets/logo/logo.png"}
                   alt="dsign-logo"
                 />

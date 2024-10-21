@@ -8,19 +8,19 @@ const NavbarSocialMedia = () => {
     <div className="flex gap-4">
       <Link
         href="https://www.linkedin.com/"
-        className="flex items-center justify-center w-8 h-8 bg-blue text-white rounded-full"
+        className="flex items-center justify-center w-8 h-8 bg-cinnabar-600 text-white rounded-full"
       >
         <FaLinkedinIn />
       </Link>
       <Link
         href="https://www.facebook.com/"
-        className="flex items-center justify-center w-8 h-8 bg-blue text-white rounded-full"
+        className="flex items-center justify-center w-8 h-8 bg-cinnabar-600 text-white rounded-full"
       >
         <FaFacebookF />
       </Link>
       <Link
         href="https://www.instagram.com/"
-        className="flex items-center justify-center w-8 h-8 bg-blue text-white rounded-full"
+        className="flex items-center justify-center w-8 h-8 bg-cinnabar-600 text-white rounded-full"
       >
         <FaInstagram />
       </Link>

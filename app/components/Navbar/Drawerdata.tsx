@@ -31,7 +31,9 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-4"></div>
+            <div className="p-2">
             <NavbarSocialMedia />
+            </div>
           </div>
         </div>
       </div>
