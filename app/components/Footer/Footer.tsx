@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { footerData } from "@/app/data/footerData";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import FooterSocialMedia from "./FooterSocialMedia";
@@ -14,9 +15,10 @@ const footer = () => {
           {/* COLUMN-1 */}
 
           <div className="col-span-12 md:col-span-12 lg:col-span-4">
-            <img
-              src={"/assets/logo/logo_inverted.png"}
+            <Image
+              src="/assets/logo/logo_inverted.png"
               width={160}
+              height={60}
               alt="logo"
               className="pb-8"
             />
