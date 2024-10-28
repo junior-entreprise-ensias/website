@@ -31,7 +31,7 @@ export default function BlurFade({
   className,
   variant,
   duration = 0.4,
-  delay = 0,
+  delay = 0.4,
   yOffset = 6,
   inView = false,
   inViewMargin = "-50px",
