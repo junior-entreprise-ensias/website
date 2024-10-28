@@ -1,22 +1,37 @@
 import Link from "next/link";
+import BlurFade from "@/app/magicui/ui/blur-fade";
+import GradualSpacing from "@/app/magicui/ui/gradual-spacing";
+import { FadeText } from "@/app/magicui/ui/fade-text";
 
 const Banner = () => {
   return (
-    <main>
-      <div className="px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl pt-16 sm:pt-20 pb-20 banner-image">
-          <div className="text-center">
-            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-7xl md:4px lh-96">
-              Empowering Innovation,
-              <br />
-              Shaping Tomorrow
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-black text-opacity-50">
-              At ENSIAS Junior Entreprise, we harness the talent and creativity
-              of tomorrow’s leaders <br /> to deliver cutting-edge solutions.
-            </p>
-          </div>
-          <div className="text-center mt-5">
+    <div className="px-6 lg:px-8">
+      {/* add 'banner-image' to className to see bg image */}
+      <div className="mx-auto max-w-7xl min-h-[90vh] flex flex-col justify-center items-center"> 
+        <div className="text-center">
+          <GradualSpacing
+            className="text-4xl font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
+            text="Empowering Innovation,"
+          />
+          <GradualSpacing
+            className="text-4xl font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
+            text="Shaping Tomorrow"
+          />
+        </div>
+        <div className="text-center mt-5">
+          <FadeText
+            direction="up"
+            text="At ENSIAS Junior Entreprise, we harness the talent and creativity of tomorrow’s leaders"
+            className="text-lg leading-8 text-black text-opacity-50"
+          />
+          <FadeText
+            direction="up"
+            text="to deliver cutting-edge solutions."
+            className="text-lg leading-8 text-black text-opacity-50"
+          />
+        </div>
+        <div className="text-center mt-10">
+          <BlurFade>
             <Link
               href="/projects"
               type="button"
@@ -31,10 +46,10 @@ const Banner = () => {
             >
               More info
             </Link>
-          </div>
+          </BlurFade>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
