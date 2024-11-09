@@ -22,7 +22,7 @@ const Stats = () => {
               <h3 className="text-2xl text-black font-semibold text-center lg:mt-6">
                 {items.heading}
               </h3>
-              <p className="text-lg font-normal text-black text-center text-opacity-50 mt-2">
+              <p className="text-lg font-normal text-black text-center text-opacity-90 mt-2">
                 {items.subheading}
               </p>
             </div>

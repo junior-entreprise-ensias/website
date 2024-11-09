@@ -2,6 +2,7 @@ import Banner from './components/Banner/Banner';
 import Stats from './components/Stats/index';
 import Services from './components/Services/index';
 import Why from './components/Why/index';
+import About from './components/About';
 // import Network from './components/Network/index';
 // import Clientsay from './components/Clientsay/index';
 // import Newsletter from './components/Newsletter/Newsletter';
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
+      <About />
       <Stats />
       <Services />
       <Why />

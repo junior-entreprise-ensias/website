@@ -22,12 +22,12 @@ const Banner = () => {
           <FadeText
             direction="up"
             text="At ENSIAS Junior Entreprise, we harness the talent and creativity of tomorrow’s leaders"
-            className="text-lg leading-8 text-black text-opacity-50"
+            className="text-lg leading-8 text-black text-opacity-80"
           />
           <FadeText
             direction="up"
             text="to deliver cutting-edge solutions."
-            className="text-lg leading-8 text-black text-opacity-50"
+            className="text-lg leading-8 text-black text-opacity-80"
           />
         </div>
         <div className="text-center mt-10">

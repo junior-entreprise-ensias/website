@@ -8,29 +8,32 @@ const services = servicesData;
 const Services = () => {
   return (
     <div id="services">
-      <div className="mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8">
+      <div className="mx-auto my-10 px-5 sm:px-20 py-5 sm:py-20">
         <BlurFade inView={true}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* COLUMN-1 */}
-            <div className="col-span-6 lg:col-span-5 flex justify-center">
-              <div className="flex flex-col align-middle justify-center p-10">
-                <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">
-                  Our services
-                </p>
-                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-black text-opacity-50">
-                  At ENSIAS Junior Entreprise, we deliver innovative, tailored
-                  solutions to help your business grow. From software
-                  development to data analysis, our skilled team is dedicated to
-                  meeting your unique needs and ensuring top-quality results.
-                </h4>
-                <Link
-                  href={"/"}
-                  className="mt-4 text-xl font-medium text-cinnabar-600 flex gap-2 mx-auto lg:mx-0 space-links"
-                >
-                  Learn more{" "}
-                  <FaArrowRight className="text-2xl text-cinnabar-600" />
-                </Link>
+            <div className="col-span-6 lg:col-span-5 flex flex-col justify-center">
+              <div className="section-title relative pb-5 mb-10">
+                <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+                  Our Services
+                </h5>
+                <h1 className="text-4xl mb-0">
+                  Custom IT Solutions for Your Successful Business
+                </h1>
               </div>
+              <p className="font-normal text-lg text-black text-opacity-90 mb-5">
+                At ENSIAS Junior Entreprise, we deliver innovative, tailored
+                solutions to help your business grow. From software development
+                to data analysis, our skilled team is dedicated to meeting your
+                unique needs and ensuring top-quality results.
+              </p>
+              <Link
+                href={"/"}
+                className="mt-4 text-xl font-medium text-cinnabar-600 flex gap-2 mx-auto lg:mx-0 space-links"
+              >
+                Learn more{" "}
+                <FaArrowRight className="text-2xl text-cinnabar-600" />
+              </Link>
             </div>
 
             <div className="lg:col-span-1"></div>
@@ -45,7 +48,7 @@ const Services = () => {
                   >
                     <div className="mb-5">{item.icon}</div>
                     <h4 className="text-2xl font-semibold">{item.country}</h4>
-                    <h4 className="text-lg font-normal text-black text-opacity-50 my-2">
+                    <h4 className="text-lg font-normal text-black text-opacity-90 my-2">
                       {item.paragraph}
                     </h4>
                   </div>

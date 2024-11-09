@@ -8,11 +8,11 @@ const why = whyData;
 const Why = () => {
   return (
     <div id="why">
-      <div className="mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8">
+      <div className="mx-auto my-10 px-5 sm:px-20 py-5 sm:py-20">
         <BlurFade inView={true}>
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* COLUMN-1 */}
-            <div className="lg:-ml-64">
+            <div className="lg:-ml-64 hidden lg:block">
               <Image
                 src="/assets/why/iPad.png"
                 alt="iPad-image"
@@ -23,13 +23,16 @@ const Why = () => {
 
             {/* COLUMN-2 */}
             <div>
-              <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">
-                Why choose us?
-              </h3>
-              <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-black text-opacity-50 lg:text-start">
+              <div className="section-title relative pb-5 mb-10">
+                <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+                  Why Choose Us?
+                </h5>
+                <h1 className="text-4xl mb-0">We Are Here to Grow Your Business Exponentially</h1>
+              </div>
+              <p className="font-normal text-lg text-black text-opacity-90 mb-5">
                 We are here to grow your business exponentially. We provide the
                 best services to our clients.
-              </h4>
+              </p>
               <div className="mt-10 px-4 lg:px-0">
                 {why.map((items, i) => (
                   <div className="flex mt-4" key={i}>
@@ -38,7 +41,7 @@ const Why = () => {
                       <h4 className="text-2xl font-semibold">
                         {items.heading}
                       </h4>
-                      <h5 className="text-lg text-black text-opacity-50 font-normal mt-2">
+                      <h5 className="text-lg text-black text-opacity-90 font-normal mt-2">
                         {items.subheading}
                       </h5>
                     </div>
