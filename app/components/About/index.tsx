@@ -6,7 +6,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div id="about">
-      <div className="mx-auto my-10 px-5 sm:px-20 py-5 sm:py-20">
+      <div className="mx-auto my-10 px-5 sm:px-24 py-5 sm:py-20">
         <BlurFade inView={true}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left column */}

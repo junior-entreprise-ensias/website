@@ -1,7 +1,7 @@
 import Link from "next/link";
 import BlurFade from "@/app/magicui/ui/blur-fade";
 import GradualSpacing from "@/app/magicui/ui/gradual-spacing";
-import { FadeText } from "@/app/magicui/ui/fade-text";
+
 
 const Banner = () => {
   return (
@@ -9,25 +9,24 @@ const Banner = () => {
       <div className="mx-auto min-h-[100vh] flex flex-col justify-center items-center"> 
         <div className="text-center">
           <GradualSpacing
-            className="text-2xl lg:text-4xl font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
+            className="text-2xl lg:text-4xl drop-shadow-lg text-white font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
             text="Empowering Innovation,"
           />
           <GradualSpacing
-            className="text-2xl lg:text-4xl font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
+            className="text-2xl lg:text-4xl drop-shadow-lg text-white font-semibold sm:text-5xl lg:text-7xl md:4px lh-96"
             text="Shaping Tomorrow"
           />
         </div>
         <div className="text-center mt-5">
-          <FadeText
-            direction="up"
-            text="At ENSIAS Junior Entreprise, we harness the talent and creativity of tomorrow’s leaders"
-            className="text-md leading-8 text-black text-opacity-80"
-          />
-          <FadeText
-            direction="up"
-            text="to deliver cutting-edge solutions."
-            className="text-md leading-8 text-black text-opacity-80"
-          />
+          <BlurFade>
+            <p className="text-md leading-8 text-white drop-shadow-lg font-medium text-black text-opacity-90">
+              At ENSIAS Junior Entreprise, we harness the talent and creativity
+              of tomorrow’s leaders
+            </p>
+            <p className="text-md leading-8 text-white drop-shadow-lg font-medium text-black text-opacity-90">
+              to deliver cutting-edge solutions.
+            </p>
+          </BlurFade>
         </div>
         <div className="text-center mt-10">
           <BlurFade>

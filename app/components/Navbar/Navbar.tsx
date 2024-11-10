@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="navbar absolute top-0 left-0 right-0">
+    <Disclosure as="nav" className="navbar absolute top-0 left-0 right-0 z-10">
       <>
         <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
@@ -27,14 +27,14 @@ const Navbar = () => {
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <Image
-                  src="/assets/logo/logo.png"
+                  src="/assets/logo/logo_inverted.png"
                   width={80}
                   height={80}
                   alt="logo"
                   className="block lg:hidden"
                 />
                 <Image
-                  src="/assets/logo/logo.png"
+                  src="/assets/logo/logo_inverted.png"
                   width={80}
                   height={80}
                   alt="logo"
@@ -49,9 +49,9 @@ const Navbar = () => {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? " text-black hover:opacity-100"
-                          : "hover:text-black hover:opacity-100",
-                        "px-3 py-4 text-lg font-normal opacity-90 space-links"
+                          ? "hover:opacity-100"
+                          : "hover:opacity-100",
+                        "px-3 py-4 text-lg text-white font-normal opacity-90 space-links"
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >
@@ -74,7 +74,7 @@ const Navbar = () => {
 
             <div className="block lg:hidden">
               <Bars3Icon
-                className="block h-6 w-6"
+                className="block h-6 w-6 text-white"
                 aria-hidden="true"
                 onClick={() => setIsOpen(true)}
               />
