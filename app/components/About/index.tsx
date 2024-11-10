@@ -10,7 +10,7 @@ const About = () => {
         <BlurFade inView={true}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left column */}
-            <div className="col-span-7">
+            <div className="col-span-6 lg:col-span-7">
               <div className="section-title relative pb-5 mb-10">
                 <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
                   About Us
@@ -67,14 +67,14 @@ const About = () => {
               </div>
             </div>
             {/* Right column */}
-            <div className="col-span-5 min-h-[500px]">
+            <div className="col-span-6 lg:col-span-5 min-h-[500px]">
               <div className="relative h-full">
                 <Image
                   src="/assets/about/ensias.jpg"
                   alt="ensias"
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg absolute"
+                  className="rounded-lg absolute  right-0"
                 />
               </div>
             </div>

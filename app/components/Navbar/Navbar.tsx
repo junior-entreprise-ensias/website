@@ -18,13 +18,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="navbar">
+    <Disclosure as="nav" className="navbar absolute top-0 left-0 right-0">
       <>
         <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
-            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-              {/* LOGO */}
+            {/* LOGO AND NAVIGATION LINKS */}
 
+            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <Image
                   src="/assets/logo/logo.png"
@@ -41,9 +41,6 @@ const Navbar = () => {
                   className="hidden lg:block"
                 />
               </div>
-
-              {/* LINKS */}
-
               <div className="hidden lg:block m-auto">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
@@ -54,7 +51,7 @@ const Navbar = () => {
                         item.current
                           ? " text-black hover:opacity-100"
                           : "hover:text-black hover:opacity-100",
-                        "px-3 py-4 text-lg font-normal opacity-75 space-links"
+                        "px-3 py-4 text-lg font-normal opacity-90 space-links"
                       )}
                       aria-current={item.href ? "page" : undefined}
                     >

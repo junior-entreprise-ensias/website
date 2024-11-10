@@ -10,19 +10,20 @@ const Why = () => {
     <div id="why">
       <div className="mx-auto my-10 px-5 sm:px-20 py-5 sm:py-20">
         <BlurFade inView={true}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* COLUMN-1 */}
-            <div className="lg:-ml-64 hidden lg:block">
+            <div className="hidden col-span-12 lg:col-span-5 lg:block">
               <Image
-                src="/assets/why/iPad.png"
-                alt="iPad-image"
-                width={4000}
-                height={900}
+                src="/assets/why/why.jpg"
+                alt="image"
+                width={400}
+                height={400}
+                className="rounded-lg object-cover mx-auto"
               />
             </div>
 
             {/* COLUMN-2 */}
-            <div>
+            <div className="col-span-12 lg:col-span-7">
               <div className="section-title relative pb-5 mb-10">
                 <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
                   Why Choose Us?

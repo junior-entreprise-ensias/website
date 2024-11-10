@@ -1,7 +1,7 @@
-import Banner from './components/Banner/Banner';
-import Stats from './components/Stats/index';
-import Services from './components/Services/index';
-import Why from './components/Why/index';
+import Banner from './components/Banner';
+// import Stats from './components/Stats';
+import Services from './components/Services';
+import Why from './components/Why';
 import About from './components/About';
 // import Network from './components/Network/index';
 // import Clientsay from './components/Clientsay/index';
@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <main>
       <Banner />
+      {/* <Stats /> */}
       <About />
-      <Stats />
-      <Services />
       <Why />
+      <Services />
       {/* <Network /> */}
       {/* <Clientsay /> */}
       {/* <Newsletter /> */}
