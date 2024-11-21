@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 
+
 const Contact = () => {
   return (
     <div id="contact">
@@ -37,7 +38,7 @@ const Contact = () => {
                   We are here to help you. If you have any questions or need
                   assistance, feel free to contact us.
                 </h4>
-                <form className="flex flex-col gap-4">
+                <form className="flex flex-col gap-4" method="POST" data-netlify="true">
                   <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
                     <AiOutlineUser className="text-cinnabar-700" />
                     <input
@@ -65,7 +66,7 @@ const Contact = () => {
                       rows={5}
                     />
                   </div>
-                  <button className="bg-midred text-white font-medium py-2 px-4 rounded-2xl">
+                  <button type="submit" className="bg-midred text-white font-medium py-2 px-4 rounded-2xl">
                     Send Message <FiSend className="inline-block ml-2" />
                   </button>
                 </form>
