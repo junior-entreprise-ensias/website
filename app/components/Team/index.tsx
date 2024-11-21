@@ -20,7 +20,7 @@ const Team = () => {
             </h1>
           </div>
           <div className="relative w-full overflow-hidden">
-            <Marquee pauseOnHover className="[--duration:30s]">
+            <Marquee pauseOnHover className="[--duration:60s]">
               {team.map((item, index) => (
                 <TeamItemCard key={index} item={item} />
               ))}

@@ -6,7 +6,7 @@ import Team from './components/Team';
 // import Stats from './components/Stats';
 // import Network from './components/Network/index';
 // import Clientsay from './components/Clientsay/index';
-// import Newsletter from './components/Newsletter/Newsletter';
+import Contact from './components/Contact';
 
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       <Why />
       <Services />
       <Team />
+      <Contact />
     </main>
   )
 }
