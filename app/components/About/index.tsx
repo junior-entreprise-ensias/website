@@ -15,7 +15,9 @@ const About = () => {
                 <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-600 uppercase mb-2">
                   About Us
                 </h5>
-                <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">The Best IT Solutions</h1>
+                <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">
+                  The Best IT Solutions
+                </h1>
               </div>
               <p className="font-normal text-lg text-black text-opacity-90 mb-5">
                 ENSIAS Junior Entreprise is a technology organization that
@@ -52,9 +54,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center mb-5">
-                <div
-                  className="w-[60px] h-[60px] bg-cinnabar-600 flex items-center justify-center rounded-lg"
-                >
+                <div className="w-[60px] h-[60px] bg-cinnabar-600 flex items-center justify-center rounded-lg">
                   {/* <i className="fa fa-phone-alt text-white fa-lg"></i> */}
                   <FaPhoneAlt className="text-white text-2xl" />
                 </div>
@@ -67,16 +67,14 @@ const About = () => {
               </div>
             </div>
             {/* Right column */}
-            <div className="col-span-6 lg:col-span-5 min-h-[500px]">
-              <div className="relative h-full">
-                <Image
-                  src="/assets/about/ensias.jpg"
-                  alt="ensias"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg absolute  right-0"
-                />
-              </div>
+            <div className="col-span-6 lg:col-span-5 max-h-[500px] px-5">
+              <Image
+                src="/assets/about/ensias.jpg"
+                alt="ensias"
+                width={500}
+                height={500}
+                className="rounded-lg w-full h-full object-cover"
+              />
             </div>
           </div>
         </BlurFade>
