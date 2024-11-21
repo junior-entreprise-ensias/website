@@ -35,6 +35,15 @@ html:not([data-scroll="0"]) .navbar {
 .leafbutton {
     border-radius: 0px 30px 30px 40px;
 }
+.leafbutton-reverse {
+    border-radius: 30px 0px 40px 30px;
+}
+
+@media (max-width: 767px) {
+    .leafbutton, .leafbutton-reverse {
+        border-radius: 30px;
+    }
+}
 
 .banner-image {
     background-image: url('/assets/banner/hero.png');
@@ -152,6 +161,13 @@ hr {
 }
 @-webkit-keyframes section-title-run-sm {
     0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+}
+
+@media (max-width: 767px) {
+    .section-title::before {
+        left: 50%;
+        margin-left: -75px;
+    }
 }
 
 /* Footer */

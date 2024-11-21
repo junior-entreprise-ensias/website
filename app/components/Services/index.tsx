@@ -14,10 +14,10 @@ const Services = () => {
             {/* COLUMN-1 */}
             <div className="col-span-6 lg:col-span-5 flex flex-col justify-center">
               <div className="section-title relative pb-5 mb-10">
-                <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-600 uppercase mb-2">
                   Our Services
                 </h5>
-                <h1 className="text-4xl mb-0">
+                <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">
                   Custom IT Solutions for Your Successful Business
                 </h1>
               </div>

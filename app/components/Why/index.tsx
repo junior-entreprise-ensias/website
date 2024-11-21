@@ -1,7 +1,7 @@
 import BlurFade from "@/app/magicui/ui/blur-fade";
-import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
 import { whyData } from "../../data/whyData";
+import Image from "next/image";
 
 const why = whyData;
 
@@ -10,31 +10,33 @@ const Why = () => {
     <div id="why">
       <div className="mx-auto my-10 px-5 sm:px-24 py-5 sm:py-20">
         <BlurFade inView={true}>
+          <div className="section-title relative text-center pb-5 mb-10">
+            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+              Why Choose Us?
+            </h5>
+            <h1 className="text-2xl md:text-4xl mb-0">
+              We Are Here to Grow Your Business Exponentially
+            </h1>
+          </div>
+          <p className="font-normal text-center text-lg text-black text-opacity-90 mb-5">
+            We are here to grow your business exponentially. We provide the best
+            services to our clients.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* COLUMN-1 */}
-            <div className="hidden col-span-12 lg:col-span-5 lg:block">
+            <div className="col-span-12 lg:col-span-5">
               <Image
-                src="/assets/why/why.jpg"
-                alt="image"
-                width={400}
-                height={400}
-                className="rounded-lg object-cover mx-auto"
+                className="mx-auto w-full px-5"
+                src="/assets/why/quality.svg"
+                alt="Quality"
+                width={500}
+                height={500}
               />
             </div>
 
             {/* COLUMN-2 */}
-            <div className="col-span-12 lg:col-span-7">
-              <div className="section-title relative pb-5 mb-10">
-                <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
-                  Why Choose Us?
-                </h5>
-                <h1 className="text-4xl mb-0">We Are Here to Grow Your Business Exponentially</h1>
-              </div>
-              <p className="font-normal text-lg text-black text-opacity-90 mb-5">
-                We are here to grow your business exponentially. We provide the
-                best services to our clients.
-              </p>
-              <div className="mt-10 px-4 lg:px-0">
+            <div className="col-span-12 lg:col-span-7 flex flex-col justify-center">
+              <div className="px-4 lg:px-0">
                 {why.map((items, i) => (
                   <div className="flex mt-4" key={i}>
                     <FaCheck className="text-4xl text-cinnabar-500" />

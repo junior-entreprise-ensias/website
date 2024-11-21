@@ -40,7 +40,7 @@ const Banner = () => {
             <Link
               href="/about"
               type="button"
-              className="text-15px text-cinnabar-600 font-medium bg-white ml-4 mt-2 py-5 px-16 border border-cinnabar-600 leafbutton"
+              className="text-15px text-cinnabar-600 font-medium bg-white ml-0 sm:ml-4 mt-2 py-5 px-16 border border-cinnabar-600 leafbutton-reverse"
             >
               More info
             </Link>

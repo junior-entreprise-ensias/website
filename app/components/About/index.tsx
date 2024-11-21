@@ -12,10 +12,10 @@ const About = () => {
             {/* Left column */}
             <div className="col-span-6 lg:col-span-7">
               <div className="section-title relative pb-5 mb-10">
-                <h5 className="text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-600 uppercase mb-2">
                   About Us
                 </h5>
-                <h1 className="text-4xl mb-0">The Best IT Solutions</h1>
+                <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">The Best IT Solutions</h1>
               </div>
               <p className="font-normal text-lg text-black text-opacity-90 mb-5">
                 ENSIAS Junior Entreprise is a technology organization that
