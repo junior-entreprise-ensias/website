@@ -1,10 +1,20 @@
 import BlurFade from "@/app/magicui/ui/blur-fade";
 import Image from "next/image";
+import { FormEvent } from "react";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 
-
 const Contact = () => {
+  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.target as HTMLFormElement);
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
+    });
+    // Success and error handling ...
+  };
   return (
     <div id="contact">
       <div className="mx-auto my-10 px-5 sm:px-24 py-5 sm:py-20">
@@ -38,7 +48,12 @@ const Contact = () => {
                   We are here to help you. If you have any questions or need
                   assistance, feel free to contact us.
                 </h4>
-                <form className="flex flex-col gap-4" method="POST" data-netlify="true">
+                <form
+                  className="flex flex-col gap-4"
+                  onSubmit={handleFormSubmit}
+                  data-netlify="true"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
                     <AiOutlineUser className="text-cinnabar-700" />
                     <input
@@ -46,6 +61,7 @@ const Contact = () => {
                       name="name"
                       placeholder="Name"
                       className="w-full bg-transparent outline-none"
+                      required
                     />
                   </div>
                   <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
@@ -55,6 +71,7 @@ const Contact = () => {
                       name="email"
                       placeholder="Email"
                       className="w-full bg-transparent outline-none"
+                      required
                     />
                   </div>
                   <div className="flex items-start gap-4 bg-white rounded-2xl px-4 py-2">
@@ -64,9 +81,13 @@ const Contact = () => {
                       placeholder="Message"
                       className="w-full bg-transparent outline-none"
                       rows={5}
+                      required
                     />
                   </div>
-                  <button type="submit" className="bg-midred text-white font-medium py-2 px-4 rounded-2xl">
+                  <button
+                    type="submit"
+                    className="bg-midred text-white font-medium py-2 px-4 rounded-2xl"
+                  >
                     Send Message <FiSend className="inline-block ml-2" />
                   </button>
                 </form>
