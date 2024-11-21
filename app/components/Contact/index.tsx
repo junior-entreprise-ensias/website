@@ -1,3 +1,5 @@
+"use client";
+
 import BlurFade from "@/app/magicui/ui/blur-fade";
 import Image from "next/image";
 import { FormEvent } from "react";
