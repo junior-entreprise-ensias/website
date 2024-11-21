@@ -11,10 +11,10 @@ const footer = () => {
   return (
     <div className="bg-black opacity-90 mt-40">
       <div className="mx-auto max-w-2xl pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="my-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-y-10 gap-x-0 xl:gap-x-8">
+        <div className="my-24 grid grid-cols-12 gap-y-10 gap-x-0 xl:gap-x-8">
           {/* COLUMN-1 */}
 
-          <div className="col-span-12 md:col-span-12 lg:col-span-4">
+          <div className="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start">
             <Image
               src="/assets/logo/logo_inverted.png"
               width={160}
@@ -22,7 +22,9 @@ const footer = () => {
               alt="logo"
               className="pb-8"
             />
-            <FooterSocialMedia />
+            <div className="mb-5 lg:mb-0">
+              <FooterSocialMedia />
+            </div>
           </div>
 
           {/* CLOUMN-2/3 */}
@@ -30,11 +32,11 @@ const footer = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="group relative col-span-12 md:col-span-4 lg:col-span-2"
+              className="group relative col-span-12 lg:col-span-2 flex flex-col items-center lg:items-start"
             >
               <ul>
                 {item.link.map((link: string, index: number) => (
-                  <li key={index} className="mb-5">
+                  <li key={index} className="mb-5 text-center lg:text-start">
                     <Link
                       href="/"
                       className="text-white text-sm font-normal mb-6 space-links"
@@ -49,7 +51,7 @@ const footer = () => {
 
           {/* CLOUMN-4 */}
 
-          <div className="col-span-12 md:col-span-4 lg:col-span-4">
+          <div className="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start">
             <div className="flex gap-2">
               <FaMapMarkerAlt className="text-cinnabar-500 text-2xl" />
               <h5 className="text-base font-normal text-white">

@@ -7,6 +7,6 @@ export const footerData: FooterItem[] = [
   },
   {
     id: 2,
-    link: ['Team', 'Contact', 'Privacy policy', 'Terms & conditions'],
+    link: ['Team', 'Contact', 'Privacy', 'Terms'],
   },
 ];
