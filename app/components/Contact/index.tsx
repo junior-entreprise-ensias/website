@@ -2,20 +2,35 @@
 
 import BlurFade from "@/app/magicui/ui/blur-fade";
 import Image from "next/image";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 
 const Contact = () => {
+  const [sending, setSending] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    setSuccess(false);
+    setError(false);
+    setSending(true);
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
     await fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData as any).toString(),
-    });
-    // Success and error handling ...
+    })
+      .then(() => {
+        setSending(false);
+        setSuccess(true);
+        alert("Message sent successfully!");
+      })
+      .catch(() => {
+        setSending(false);
+        setError(true);
+        alert("Failed to send message!");
+      });
   };
   return (
     <div id="contact">
@@ -86,12 +101,32 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <button
-                    type="submit"
-                    className="bg-midred text-white font-medium py-2 px-4 rounded-2xl"
-                  >
-                    Send Message <FiSend className="inline-block ml-2" />
-                  </button>
+                  {sending ? (
+                    <button
+                      type="button"
+                      className="bg-midred text-white font-medium py-2 px-4 rounded-2xl cursor-not-allowed"
+                      disabled
+                    >
+                      Sending...
+                    </button>
+                  ) : (
+                    <button
+                      type="submit"
+                      className="bg-midred text-white font-medium py-2 px-4 rounded-2xl"
+                    >
+                      Send Message <FiSend className="inline-block ml-2" />
+                    </button>
+                  )}
+                  {success && (
+                    <div className="bg-cinnabar-300 text-white text-center p-2 text-sm rounded-2xl">
+                      Message sent successfully!
+                    </div>
+                  )}
+                  {error && (
+                    <div className="bg-cinnabar-300 text-red text-center p-2 text-sm rounded-2xl">
+                      Failed to send message!
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
