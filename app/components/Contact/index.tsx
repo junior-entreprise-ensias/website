@@ -24,12 +24,10 @@ const Contact = () => {
       .then(() => {
         setSending(false);
         setSuccess(true);
-        alert("Message sent successfully!");
       })
       .catch(() => {
         setSending(false);
         setError(true);
-        alert("Failed to send message!");
       });
   };
   return (
