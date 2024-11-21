@@ -33,6 +33,12 @@ export default function RootLayout({
           href="/favicon_io/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon_io/site.webmanifest" />
+        <meta property="og:image" content="https://ensiasje.netlify.app/preview.png" />
+        <meta property="og:title" content="ENSIAS Junior Entreprise" />
+        <meta property="og:description" content="ENSIAS Junior Entreprise Website" />
+        <meta property="og:url" content="https://ensiasje.netlify.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
       </head>
       <body>
         <Navbar />
