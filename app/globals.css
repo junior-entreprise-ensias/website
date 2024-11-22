@@ -46,7 +46,7 @@ html:not([data-scroll="0"]) .navbar {
 }
 
 .banner-image {
-    background-image: url('/assets/banner/hero.png');
+    background-image: url('/assets/banner/hero.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
