@@ -33,7 +33,9 @@ export default function RootLayout({
           href="/favicon_io/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon_io/site.webmanifest" />
-        <meta property="og:image" content="https://ensiasje.netlify.app/preview.png" />
+        <meta property="og:image" content="https://ensiasje.netlify.app/preview.jpg" />
+        <meta property="og:image:width" content="2016" />
+        <meta property="og:image:height" content="1232" />
         <meta property="og:title" content="ENSIAS Junior Entreprise" />
         <meta property="og:description" content="ENSIAS Junior Entreprise Website" />
         <meta property="og:url" content="https://ensiasje.netlify.app" />
@@ -42,7 +44,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="ENSIAS Junior Entreprise" />
         <meta name="twitter:description" content="ENSIAS Junior Entreprise Website" />
-        <meta name="twitter:image" content="https://ensiasje.netlify.app/preview.png" />
+        <meta name="twitter:image" content="https://ensiasje.netlify.app/preview.jpg" />
       </head>
       <body>
         <Navbar />
