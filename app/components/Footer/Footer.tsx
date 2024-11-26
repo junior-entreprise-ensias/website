@@ -58,16 +58,30 @@ const footer = () => {
                 ENSIAS, Rabat, Morocco
               </h5>
             </div>
-            <div className="flex gap-2 mt-10">
+            <div className="flex gap-2 mt-5">
               <FaPhone className="text-cinnabar-500 text-2xl" />
-              <h5 className="text-base font-normal text-white">
-                + 212 6 00 00 00 00
-              </h5>
+              <Link
+                href="tel:+212708301269"
+                title="President"
+                className="text-base font-normal text-white"
+              >
+                +212 7 08 30 12 69 (P)
+              </Link>
             </div>
-            <div className="flex gap-2 mt-10">
+            <div className="flex gap-2 mt-5">
+              <FaPhone className="text-cinnabar-500 text-2xl" />
+              <Link
+                href="tel:+212674984499"
+                title="Vice President"
+                className="text-base font-normal text-white"
+              >
+                +212 6 74 98 44 99 (VP)
+              </Link>
+            </div>
+            <div className="flex gap-2 mt-5">
               <FaEnvelope className="text-cinnabar-500 text-2xl" />
               <h5 className="text-base font-normal text-white">
-                ensias.je@gmail.com
+                ensias.je.media@gmail.com
               </h5>
             </div>
           </div>

@@ -1,44 +1,64 @@
-"use client"
-import Navbar from './Navbar';
-import React, { useEffect } from 'react';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-const Navbarin: React.FC = () => {
-    useEffect(() => {
-        // The debounce function receives our function as a parameter
-        const debounce = (fn: Function) => {
-            // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-            let frame: number;
-            // The debounce function returns a new function that can receive a variable number of arguments
-            return (...params: any[]) => {
-                // If the frame variable has been defined, clear it now, and queue for next frame
-                if (frame) {
-                    cancelAnimationFrame(frame);
-                }
-                // Queue our function call for the next frame
-                frame = requestAnimationFrame(() => {
-                    // Call our function and pass any params we received
-                    fn(...params);
-                });
-            }
-        };
+import { navigationData } from "../../data/navigationData";
+import NavbarSocialMedia from "./NavbarSocialMedia";
+import { Bars3Icon } from "@heroicons/react/24/outline";
+import Drawer from "./Drawer";
+import Drawerdata from "./Drawerdata";
 
-        // Reads out the scroll position and stores it in the data attribute
-        // so we can use it in our stylesheets
-        const storeScroll = () => {
-            document.documentElement.dataset.scroll = window.scrollY.toString();
-        }
+const navigation = navigationData;
 
-        // Listen for new scroll events, here we debounce our `storeScroll` function
-        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-
-        // Update scroll position for first time
-        storeScroll();
-    }, [])
-    return (
-        <>
-            <Navbar />
-        </>
-    );
+function Navbar() {
+  const [isOpen, setIsOpen] = React.useState(false);
+  
+  return (
+    <div className="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-white/60 bg-white/60 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+      <div className="px-4">
+        <div className="flex items-center justify-between">
+          <div className="flex shrink-0">
+            <Link aria-current="page" className="flex items-center" href="/">
+              <Image
+                src="/assets/logo/logo.png"
+                width={40}
+                height={40}
+                alt="logo"
+                className="h-7 w-auto"
+              />
+              <p className="sr-only">Website Title</p>
+            </Link>
+          </div>
+          <div className="hidden md:flex md:items-center md:justify-center md:gap-5">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                aria-current={item.href ? "page" : undefined}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className="hidden lg:block">
+            <NavbarSocialMedia />
+          </div>
+          <div className="block lg:hidden">
+            <Bars3Icon
+              className="block h-6 w-6 text-cinnabar-600"
+              aria-hidden="true"
+              onClick={() => setIsOpen(true)}
+            />
+          </div>
+          <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+            <Drawerdata />
+          </Drawer>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Navbarin;
+export default Navbar;

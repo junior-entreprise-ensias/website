@@ -55,14 +55,25 @@ const About = () => {
               </div>
               <div className="flex items-center mb-5">
                 <div className="w-[60px] h-[60px] bg-cinnabar-600 flex items-center justify-center rounded-lg">
-                  {/* <i className="fa fa-phone-alt text-white fa-lg"></i> */}
                   <FaPhoneAlt className="text-white text-2xl" />
                 </div>
                 <div className="ps-4">
                   <h5 className="text-lg">Call to ask any question</h5>
-                  <h4 className="text-cinnabar-600 text-lg mb-0">
-                    +212 600 00 00 00
-                  </h4>
+                  <Link
+                    href="tel:+212708301269"
+                    title="President"
+                    className="text-cinnabar-600 text-lg mb-0"
+                  >
+                    +212 7 08 30 12 69
+                  </Link>
+                  <span className="mx-2">or</span>
+                  <Link
+                    href="tel:+212674984499"
+                    title="Vice President"
+                    className="text-cinnabar-600 text-lg mb-0"
+                  >
+                    +212 6 74 98 44 99
+                  </Link>
                 </div>
               </div>
             </div>

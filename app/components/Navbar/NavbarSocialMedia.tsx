@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const NavbarSocialMedia = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-2">
       <Link
         href="https://www.linkedin.com/"
         className="flex items-center justify-center w-8 h-8 bg-cinnabar-600 text-white rounded-full"
