@@ -1,7 +1,6 @@
 "use client";
 
 import BlurFade from "@/app/magicui/ui/blur-fade";
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
@@ -45,14 +44,15 @@ const Contact = () => {
           <div className="mx-auto max-w-2xl lg:max-w-7xl bg-cinnabar-800 rounded-3xl">
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-2 xl:gap-x-8">
               {/* COLUMN-1 */}
-              <div className="hidden lg:block">
-                <div className="h-full">
-                  <Image
-                    src={"/assets/contact/contact.svg"}
-                    alt="contactimg"
-                    width={588}
-                    height={334}
-                  />
+              <div className="hidden lg:flex items-center justify-center">
+                <div className="h-full w-full p-5">
+                  <div className="h-full w-full rounded-2xl overflow-hidden">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ensias+(ENSIAS%20Junior%20Entreprise)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
 
