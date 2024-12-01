@@ -33,14 +33,14 @@ const Banner = () => {
             <Link
               href="#about"
               type="button"
-              className="text-15px text-white font-medium bg-cinnabar-600 py-5 w-[180px] mt-2 leafbutton"
+              className="text-15px text-white font-medium bg-cinnabar-600 mx-2 mt-2 py-5 w-[180px] leafbutton"
             >
               Who are we?
             </Link>
             <Link
               href="#contact"
               type="button"
-              className="text-15px text-cinnabar-600 font-medium bg-white ml-0 sm:ml-4 mt-2 py-5 w-[180px] leafbutton-reverse"
+              className="text-15px text-cinnabar-600 font-medium bg-white mx-2 mt-2 py-5 w-[180px] leafbutton-reverse"
             >
               Contact us
             </Link>

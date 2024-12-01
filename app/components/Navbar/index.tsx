@@ -43,7 +43,8 @@ function Navbar() {
       <div className="flex items-center justify-between px-5">
         <div
           className={
-            `flex items-center border-r pr-5 py-4` + ` ${isScrolled ? "border-black/20" : "border-white/20"}`
+            `flex items-center border-0 md:border-r pr-5 py-4` +
+            ` ${isScrolled ? "border-black/20" : "border-white/20"}`
           }
         >
           <Link aria-current="page" className="flex items-center" href="/">
@@ -81,7 +82,12 @@ function Navbar() {
         >
           <NavbarSocialMedia />
         </div>
-        <div className="block lg:hidden">
+        <div
+          className={
+            `block lg:hidden border-l pl-5 py-6` +
+            ` ${isScrolled ? "border-black/20" : "border-white/20"}`
+          }
+        >
           <Bars3Icon
             className="block h-6 w-6"
             aria-hidden="true"

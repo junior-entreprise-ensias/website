@@ -10,8 +10,8 @@ const year = new Date().getFullYear();
 const footer = () => {
   return (
     <div className="bg-black opacity-90 mt-40">
-      <div className="mx-auto max-w-2xl pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="my-24 grid grid-cols-12 gap-y-10 gap-x-0 xl:gap-x-8">
+      <div className="w-full pt-8">
+        <div className="my-20 mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 grid grid-cols-12 gap-y-10 gap-x-0 xl:gap-x-8">
           {/* COLUMN-1 */}
 
           <div className="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start">
@@ -87,11 +87,17 @@ const footer = () => {
           </div>
         </div>
 
-        {/* All Rights Reserved */}
+        {/* COPYRIGHT */}
 
-        <div className="py-10 lg:flex items-center justify-between border-t border-t-bordertop">
+        <div className="py-8 mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:flex items-center justify-between border-t border-white/20">
           <h4 className="text-offwhite text-sm text-center lg:text-start font-normal">
             &copy; {year} ENSIAS Junior Entreprise.
+          </h4>
+          <h4 className="text-offwhite text-sm text-center mt-5 lg:mt-0 lg:text-start font-normal">
+            Made with ❤️ by{" "}
+            <Link href="https://ahmedidrissi.com" target="_blank">
+              @ahmedidrissi
+            </Link>
           </h4>
           <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
             <h4 className="text-offwhite text-sm font-normal">
