@@ -5,10 +5,11 @@ import TeamItemCard from "./TeamItemCard";
 
 const team = teamData;
 
-const Team = () => { 
+const Team = () => {
   return (
     <div id="team">
-      <div className="mx-auto my-10 py-5 sm:py-20">
+      <div className="mx-auto px-5 sm:px-24 py-20">
+        <span className="opacity-0">.</span>
         <BlurFade inView={true}>
           <div className="section-title relative text-center px-5 pb-5 mb-10">
             <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">

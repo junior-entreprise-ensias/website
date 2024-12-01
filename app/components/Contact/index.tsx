@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { AiOutlineUser, AiOutlineMail, AiOutlineMessage } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
+import { MdOutlineBusinessCenter } from "react-icons/md";
 
 const Contact = () => {
   const [sending, setSending] = useState(false);
@@ -32,7 +33,8 @@ const Contact = () => {
   };
   return (
     <div id="contact">
-      <div className="mx-auto my-10 px-5 sm:px-24 py-5 sm:py-20">
+      <div className="mx-auto px-5 sm:px-24 py-20">
+        <span className="opacity-0">.</span>
         <BlurFade inView={true}>
           <div className="section-title text-center relative pb-5 mb-10">
             <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">
@@ -69,6 +71,16 @@ const Contact = () => {
                   data-netlify="true"
                 >
                   <input type="hidden" name="form-name" value="contact" />
+                  <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
+                    <MdOutlineBusinessCenter className="text-cinnabar-700" />
+                    <input
+                      type="text"
+                      name="company"
+                      placeholder="Company"
+                      className="w-full bg-transparent outline-none"
+                      required
+                    />
+                  </div>
                   <div className="flex items-center gap-4 bg-white rounded-2xl px-4 py-2">
                     <AiOutlineUser className="text-cinnabar-700" />
                     <input
