@@ -23,8 +23,6 @@ html:not([data-scroll="0"]) .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    /* backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.1); */
     background-color: #c70f0e;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12);
     transition: 0.4s linear;
@@ -46,7 +44,7 @@ html:not([data-scroll="0"]) .navbar {
 }
 
 .banner-image {
-    background-image: url('/assets/banner/hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/banner/hero.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -59,8 +57,8 @@ html:not([data-scroll="0"]) .navbar {
     right: 0;
     bottom: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
+    /* background: rgba(0, 0, 0, 0.3); */
+    backdrop-filter: blur(1px);
 }
 
 hr {

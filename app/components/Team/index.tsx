@@ -2,11 +2,10 @@ import BlurFade from "@/app/magicui/ui/blur-fade";
 import Marquee from "@/app/magicui/ui/marquee";
 import { teamData } from "../../data/teamData";
 import TeamItemCard from "./TeamItemCard";
-import Image from "next/image";
 
 const team = teamData;
 
-const Team = () => {
+const Team = () => { 
   return (
     <div id="team">
       <div className="mx-auto my-10 py-5 sm:py-20">
