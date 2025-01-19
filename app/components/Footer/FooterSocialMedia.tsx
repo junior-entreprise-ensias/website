@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FooterSocialMedia = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-3">
       <Link
         href="https://www.linkedin.com/"
         target="_blank"

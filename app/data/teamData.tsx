@@ -79,17 +79,17 @@ export const teamData: TeamItem[] = [
     github: "AmineGoumhand1",
   },
   {
-    name: "John DOE",
-    position: "Training Manager",
-    img: "user.png",
-    linkedin: "",
-    github: "",
-  },
-  {
-    name: "John DOE",
+    name: "Ayoub KADDOURI",
     position: "Communication Manager",
     img: "user.png",
-    linkedin: "",
+    linkedin: "ayoub-kaddouri-b12630285",
+    github: "Kaddouriayoub",
+  },
+  {
+    name: "Salma ZAIME",
+    position: "Communication Manager",
+    img: "user.png",
+    linkedin: "salma-zaime-5776a6285",
     github: "",
   },
 ];
