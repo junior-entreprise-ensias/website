@@ -58,11 +58,25 @@ export const teamData: TeamItem[] = [
     github: "L-mehdi",
   },
   {
+    name: "Manar CHAHBI",
+    position: "Prospecting Manager",
+    img: "manar.jpg",
+    linkedin: "manar-chahbi-7a3770278",
+    github: "M4Cukiz",
+  },
+  {
     name: "Chaymae BOUAZZA",
     position: "Project Manager",
     img: "chaymae.jpg",
     linkedin: "chaymae-bouazza-2aab4b265",
     github: "Shiame",
+  },
+  {
+    name: "Idriss EL ABIDI",
+    position: "Training Manager",
+    img: "elabidi.jpg",
+    linkedin: "idriss-elabidi",
+    github: "Idriss-Abidi",
   },
   {
     name: "Youssef ELGARCH",
@@ -81,15 +95,15 @@ export const teamData: TeamItem[] = [
   {
     name: "Ayoub KADDOURI",
     position: "Communication Manager",
-    img: "user.png",
+    img: "ayoub.jpg",
     linkedin: "ayoub-kaddouri-b12630285",
     github: "Kaddouriayoub",
   },
   {
     name: "Salma ZAIME",
     position: "Communication Manager",
-    img: "user.png",
+    img: "salma.jpg",
     linkedin: "salma-zaime-5776a6285",
-    github: "",
-  },
+    github: "salmazaime",
+  }
 ];
