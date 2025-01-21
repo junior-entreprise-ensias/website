@@ -1,6 +1,6 @@
-# ENSIAS Junior Entreprise Website
+# Junior Entreprise ENSIAS Website
 
-This is the official website of ENSIAS Junior Entreprise. It is a platform that allows the organization to present its services and projects to the public. It also allows the public to contact the organization and request services.
+This is the official website of Junior Entreprise ENSIAS. It is a platform that allows the organization to present its services and projects to the public. It also allows the public to contact the organization and request services.
 
 ## Technologies used
 
