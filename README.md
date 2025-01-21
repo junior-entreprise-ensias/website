@@ -5,6 +5,7 @@ This is the official website of Junior Entreprise ENSIAS. It is a platform that 
 ## Technologies used
 
 <div align="center">
+    [![Netlify Status](https://api.netlify.com/api/v1/badges/97b3f5f7-216a-42ea-ab37-c8ff23399d43/deploy-status)](https://app.netlify.com/sites/ensiasje/deploys)
     <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
