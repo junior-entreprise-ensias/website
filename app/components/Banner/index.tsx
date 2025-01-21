@@ -33,7 +33,7 @@ const Banner = () => {
             <Link
               href="#about"
               type="button"
-              className="text-15px text-white font-medium bg-cinnabar-600 mx-2 mt-2 py-5 w-[180px] leafbutton"
+              className="text-15px text-white font-medium bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 mx-2 mt-2 py-5 w-[180px] leafbutton"
             >
               Who are we?
             </Link>

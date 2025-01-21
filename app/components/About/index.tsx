@@ -13,7 +13,7 @@ const About = () => {
             {/* Left column */}
             <div className="col-span-6 lg:col-span-7">
               <div className="section-title relative pb-5 mb-10">
-                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-600 uppercase mb-2">
+                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-800 uppercase mb-2">
                   About Us
                 </h5>
                 <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-center mb-5">
-                <div className="w-[60px] h-[60px] bg-cinnabar-600 flex items-center justify-center rounded-lg">
+                <div className="w-[60px] h-[60px] bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 flex items-center justify-center rounded-lg">
                   <FaPhoneAlt className="text-white text-2xl" />
                 </div>
                 <div className="ps-4">

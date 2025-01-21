@@ -12,7 +12,7 @@ const Team = () => {
         <span className="opacity-0">.</span>
         <BlurFade inView={true}>
           <div className="section-title relative text-center px-5 pb-5 mb-10">
-            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-800 uppercase mb-2">
               Our Team
             </h5>
             <h1 className="text-2xl md:text-4xl mb-0">

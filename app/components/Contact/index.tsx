@@ -36,12 +36,12 @@ const Contact = () => {
         <span className="opacity-0">.</span>
         <BlurFade inView={true}>
           <div className="section-title text-center relative pb-5 mb-10">
-            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-800 uppercase mb-2">
               Contact Us
             </h5>
             <h1 className="text-2xl md:text-4xl mb-0">Get In Touch With Us</h1>
           </div>
-          <div className="mx-auto max-w-2xl lg:max-w-7xl bg-cinnabar-800 rounded-3xl">
+          <div className="mx-auto max-w-2xl lg:max-w-7xl bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-3xl">
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 lg:grid-cols-2 xl:gap-x-8">
               {/* COLUMN-1 */}
               <div className="hidden lg:flex items-center justify-center">
@@ -114,7 +114,7 @@ const Contact = () => {
                   {sending ? (
                     <button
                       type="button"
-                      className="bg-midred text-white font-medium py-2 px-4 rounded-2xl cursor-not-allowed"
+                      className="bg-transparent border border-white border-[2px] text-white font-medium py-2 px-4 rounded-2xl cursor-not-allowed"
                       disabled
                     >
                       Sending...
@@ -122,18 +122,18 @@ const Contact = () => {
                   ) : (
                     <button
                       type="submit"
-                      className="bg-midred text-white font-medium py-2 px-4 rounded-2xl"
+                      className="bg-transparent border border-white border-[2px] text-white font-medium py-2 px-4 rounded-2xl"
                     >
                       Send Message <FiSend className="inline-block ml-2" />
                     </button>
                   )}
                   {success && (
-                    <div className="bg-cinnabar-300 text-white text-center p-2 text-sm rounded-2xl">
+                    <div className="text-white text-center border border-white border-dashed p-2 text-sm rounded-2xl">
                       Message sent successfully!
                     </div>
                   )}
                   {error && (
-                    <div className="bg-cinnabar-300 text-red text-center p-2 text-sm rounded-2xl">
+                    <div className="text-white text-center border border-white border-dashed p-2 text-sm rounded-2xl">
                       Failed to send message!
                     </div>
                   )}

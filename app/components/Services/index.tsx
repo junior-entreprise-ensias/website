@@ -15,7 +15,7 @@ const Services = () => {
             {/* COLUMN-1 */}
             <div className="col-span-6 lg:col-span-5 flex flex-col justify-center">
               <div className="section-title relative pb-5 mb-10">
-                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-600 uppercase mb-2">
+                <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-800 uppercase mb-2">
                   Our Services
                 </h5>
                 <h1 className="text-2xl md:text-4xl text-center md:text-start mb-0">
@@ -28,13 +28,13 @@ const Services = () => {
                 to data analysis, our skilled team is dedicated to meeting your
                 unique needs and ensuring top-quality results.
               </p>
-              <Link
+              {/* <Link
                 href={"/"}
                 className="mt-4 text-xl font-medium text-cinnabar-600 flex gap-2 mx-auto lg:mx-0 space-links"
               >
                 Learn more{" "}
                 <FaArrowRight className="text-2xl text-cinnabar-600" />
-              </Link>
+              </Link> */}
             </div>
 
             <div className="lg:col-span-1"></div>

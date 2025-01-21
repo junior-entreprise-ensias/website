@@ -7,21 +7,21 @@ const FooterSocialMedia = () => {
       <Link
         href="https://www.linkedin.com/"
         target="_blank"
-        className="flex items-center justify-center text-xl p-3.5 bg-cinnabar-500 text-white rounded-full"
+        className="flex items-center justify-center text-xl p-3.5 bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 text-white rounded-full"
       >
         <FaLinkedinIn />
       </Link>
       <Link
         href="https://www.facebook.com/"
         target="_blank"
-        className="flex items-center justify-center text-xl p-3.5 bg-cinnabar-500 text-white rounded-full"
+        className="flex items-center justify-center text-xl p-3.5 bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 text-white rounded-full"
       >
         <FaFacebookF />
       </Link>
       <Link
         href="https://www.instagram.com/"
         target="_blank"
-        className="flex items-center justify-center text-xl p-3.5 bg-cinnabar-500 text-white rounded-full"
+        className="flex items-center justify-center text-xl p-3.5 bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 text-white rounded-full"
       >
         <FaInstagram />
       </Link>

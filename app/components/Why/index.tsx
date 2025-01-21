@@ -12,7 +12,7 @@ const Why = () => {
         <span className="opacity-0">.</span>
         <BlurFade inView={true}>
           <div className="section-title relative text-center pb-5 mb-10">
-            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-600 uppercase mb-2">
+            <h5 className="text-xl md:text-2xl font-medium text-cinnabar-800 uppercase mb-2">
               Why Choose Us?
             </h5>
             <h1 className="text-2xl md:text-4xl mb-0">
@@ -40,7 +40,7 @@ const Why = () => {
               <div className="px-4 lg:px-0">
                 {why.map((items, i) => (
                   <div className="flex mt-4" key={i}>
-                    <FaCheck className="text-4xl text-cinnabar-500" />
+                    <FaCheck className="text-4xl text-cinnabar-600" />
                     <div className="ml-5">
                       <h4 className="text-2xl font-semibold">
                         {items.heading}
