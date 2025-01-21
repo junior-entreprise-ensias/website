@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/Footer";
 
 export const metadata = {
-  title: "ENSIAS Junior Entreprise",
-  description: "ENSIAS Junior Entreprise Website",
+  title: "Junior Entreprise ENSIAS",
+  description: "Junior Entreprise ENSIAS Website",
 };
 
 export default function RootLayout({
@@ -37,21 +37,21 @@ export default function RootLayout({
           property="og:image"
           content="https://ensiasje.netlify.app/preview.jpg"
         />
-        <meta property="og:title" content="ENSIAS Junior Entreprise" />
+        <meta property="og:title" content="Junior Entreprise ENSIAS" />
         <meta
           property="og:description"
-          content="ENSIAS Junior Entreprise Website"
+          content="Junior Entreprise ENSIAS Website"
         />
-        <meta property="og:site_name" content="ENSIAS Junior Entreprise" />
+        <meta property="og:site_name" content="Junior Entreprise ENSIAS" />
         <meta property="og:url" content="https://ensiasje.netlify.app" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
-        <meta name="keywords" content="ENSIAS, Junior, Entreprise, ENSIAS JE, ENSIAS Junior Entreprise" />
+        <meta name="keywords" content="ENSIAS, Junior, Entreprise, JE ENSIAS, Junior Entreprise ENSIAS, JEE" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="ENSIAS Junior Entreprise" />
+        <meta name="twitter:title" content="Junior Entreprise ENSIAS" />
         <meta
           name="twitter:description"
-          content="ENSIAS Junior Entreprise Website"
+          content="Junior Entreprise ENSIAS Website"
         />
         <meta
           name="twitter:image"
