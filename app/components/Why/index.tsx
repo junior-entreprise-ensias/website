@@ -23,7 +23,7 @@ const Why = () => {
             We are here to grow your business exponentially. We provide the best
             services to our clients.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 gap-lg-8">
             {/* COLUMN-1 */}
             <div className="col-span-12 lg:col-span-5">
               <Image

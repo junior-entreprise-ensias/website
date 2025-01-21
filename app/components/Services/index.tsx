@@ -11,9 +11,9 @@ const Services = () => {
       <div className="mx-auto px-5 sm:px-24 py-20">
         <span className="opacity-0">.</span>
         <BlurFade inView={true}>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-4">
             {/* COLUMN-1 */}
-            <div className="col-span-6 lg:col-span-5 flex flex-col justify-center">
+            <div className="col-span-6 flex flex-col justify-center">
               <div className="section-title relative pb-5 mb-10">
                 <h5 className="text-xl md:text-2xl text-center md:text-start font-medium text-cinnabar-800 uppercase mb-2">
                   Our Services
@@ -37,15 +37,13 @@ const Services = () => {
               </Link> */}
             </div>
 
-            <div className="lg:col-span-1"></div>
-
             {/* COLUMN-2 */}
-            <div className="col-span-6 lg:col-span-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-10 lg:gap-x-40 px-10 py-12 bg-redbg rounded-3xl">
+            <div className="col-span-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-3xl">
                 {services.map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-3xl lg:-ml-32 p-6 shadow-xl"
+                    className="bg-white rounded-3xl p-6 shadow-xl"
                   >
                     <div className="mb-5">{item.icon}</div>
                     <h4 className="text-2xl font-semibold">{item.country}</h4>
