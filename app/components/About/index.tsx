@@ -21,13 +21,13 @@ const About = () => {
                 </h1>
               </div>
               <p className="font-normal text-lg text-black text-opacity-90 mb-5">
-                ENSIAS Junior Entreprise is a technology organization that
+                Junior Entreprise ENSIAS is a technology organization that
                 prides itself on a commitment to excellence and innovation. We
                 believe in using the latest technologies to provide our clients
                 with top-quality services and solutions. Our team of students is
                 dedicated to staying up-to-date with the latest trends in the
                 industry and constantly striving to improve our skills and
-                knowledge. At ENSIAS Junior Entreprise, we value integrity,
+                knowledge. At Junior Entreprise ENSIAS, we value integrity,
                 honesty, and transparency, and we believe in building
                 long-lasting relationships with our clients based on trust and
                 mutual respect.

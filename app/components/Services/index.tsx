@@ -23,7 +23,7 @@ const Services = () => {
                 </h1>
               </div>
               <p className="font-normal text-lg text-black text-opacity-90 mb-5">
-                At ENSIAS Junior Entreprise, we deliver innovative, tailored
+                At Junior Entreprise ENSIAS, we deliver innovative, tailored
                 solutions to help your business grow. From software development
                 to data analysis, our skilled team is dedicated to meeting your
                 unique needs and ensuring top-quality results.
@@ -41,10 +41,7 @@ const Services = () => {
             <div className="col-span-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-3xl">
                 {services.map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-white rounded-3xl p-6 shadow-xl"
-                  >
+                  <div key={i} className="bg-white rounded-3xl p-6 shadow-xl">
                     <div className="mb-5">{item.icon}</div>
                     <h4 className="text-2xl font-semibold">{item.country}</h4>
                     <h4 className="text-lg font-normal text-black text-opacity-90 my-2">

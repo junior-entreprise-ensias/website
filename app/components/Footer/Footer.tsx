@@ -91,7 +91,7 @@ const footer = () => {
 
         <div className="py-8 mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:flex items-center justify-between border-t border-white/20">
           <h4 className="text-offwhite text-sm text-center lg:text-start font-normal">
-            &copy; {year} ENSIAS Junior Entreprise.
+            &copy; {year} Junior Entreprise ENSIAS.
           </h4>
           <h4 className="text-offwhite text-sm text-center mt-5 lg:mt-0 lg:text-start font-normal">
             Made with ❤️ by{" "}
