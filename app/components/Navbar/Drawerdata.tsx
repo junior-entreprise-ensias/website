@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { navigationData } from "../../data/navigationData";
-import NavbarSocialMedia from "./NavbarSocialMedia";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const navigation = navigationData;
 
@@ -32,7 +32,29 @@ const Data = () => {
             ))}
             <div className="mt-4"></div>
             <div className="p-2">
-            <NavbarSocialMedia />
+              <div className="flex gap-2">
+                <Link
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
+                >
+                  <FaLinkedinIn />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
+                >
+                  <FaFacebookF />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
+                >
+                  <FaInstagram />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

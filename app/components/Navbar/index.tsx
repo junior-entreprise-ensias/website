@@ -2,12 +2,12 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { navigationData } from "../../data/navigationData";
-import NavbarSocialMedia from "./NavbarSocialMedia";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
+
 
 const navigation = navigationData;
 
@@ -80,7 +80,38 @@ function Navbar() {
             ` ${isScrolled ? "border-black/20" : "border-white/20"}`
           }
         >
-          <NavbarSocialMedia />
+          <div className="flex gap-2">
+            <Link
+              href="https://www.linkedin.com/"
+              target="_blank"
+              className={
+                `flex items-center justify-center w-8 h-8 text-white rounded-full` +
+                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+              }
+            >
+              <FaLinkedinIn />
+            </Link>
+            <Link
+              href="https://www.facebook.com/"
+              target="_blank"
+              className={
+                `flex items-center justify-center w-8 h-8 text-white rounded-full` +
+                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+              }
+            >
+              <FaFacebookF />
+            </Link>
+            <Link
+              href="https://www.instagram.com/"
+              target="_blank"
+              className={
+                `flex items-center justify-center w-8 h-8 text-white rounded-full` +
+                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+              }
+            >
+              <FaInstagram />
+            </Link>
+          </div>
         </div>
         <div
           className={

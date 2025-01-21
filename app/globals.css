@@ -44,21 +44,16 @@ html:not([data-scroll="0"]) .navbar {
 }
 
 .banner-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/banner/hero.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
-.banner-image::before {
-    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -10vh;
     right: 0;
-    bottom: 0;
-    z-index: 0;
-    /* background: rgba(0, 0, 0, 0.3); */
-    backdrop-filter: blur(1px);
+    left: 0;
+    height: 100%;
+    background: url('/assets/banner/banner-img.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    transform: rotate(-180deg) scale(0.8);
 }
 
 hr {
