@@ -56,6 +56,14 @@ html:not([data-scroll="0"]) .navbar {
     transform: rotate(-180deg) scale(0.8);
 }
 
+.companies-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 hr {
     border-color: rgba(196, 196, 196, 0.65);
 }
