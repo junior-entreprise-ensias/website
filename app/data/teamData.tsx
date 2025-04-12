@@ -30,11 +30,11 @@ export const teamData: TeamItem[] = [
     github: "hamzaben404",
   },
   {
-    name: "Aimane FRANDILE",
+    name: "Houhou Anas",
     position: "Public Relations",
-    img: "aimane.jpg",
-    linkedin: "aimane-frandile",
-    github: "Frandiiile",
+    img: "houhou.jpg",
+    linkedin: "anas-houhou-27b7081b3",
+    github: "skur-the-plug",
   },
   {
     name: "Ahmed IDRISSI",
@@ -42,13 +42,6 @@ export const teamData: TeamItem[] = [
     img: "ahmed.jpg",
     linkedin: "ahmedidrissi",
     github: "ahmedidrissi",
-  },
-  {
-    name: "Hamza BA-MOHAMMED",
-    position: "Consultant",
-    img: "hambam.jpg",
-    linkedin: "hambam",
-    github: "hambam",
   },
   {
     name: "Mehdi LOUKILI",
