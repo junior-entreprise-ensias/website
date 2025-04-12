@@ -30,7 +30,7 @@ export const teamData: TeamItem[] = [
     github: "hamzaben404",
   },
   {
-    name: "Houhou Anas",
+    name: "Anas HOUHOU",
     position: "Public Relations",
     img: "houhou.jpg",
     linkedin: "anas-houhou-27b7081b3",
