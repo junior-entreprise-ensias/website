@@ -10,7 +10,7 @@ const team = teamData;
 export default class Team extends Component {
   render() {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,

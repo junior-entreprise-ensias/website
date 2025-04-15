@@ -281,3 +281,7 @@ hr {
     @apply bg-background text-foreground;
     }
 }
+
+.slick-dots {
+    height: 45px;
+}
