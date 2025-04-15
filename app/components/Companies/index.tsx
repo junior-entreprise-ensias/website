@@ -6,7 +6,6 @@ import Slider from "react-slick";
 
 const data = companiesData;
 
-// CAROUSEL SETTINGS
 export default class Companies extends Component {
   render() {
     const settings = {
@@ -16,6 +15,7 @@ export default class Companies extends Component {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
+      swipe: true,
       speed: 7000,
       autoplaySpeed: 1000,
       responsive: [
@@ -23,27 +23,18 @@ export default class Companies extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
           },
         },
         {
           breakpoint: 700,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
           },
         },
         {
           breakpoint: 500,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
           },
         },
       ],

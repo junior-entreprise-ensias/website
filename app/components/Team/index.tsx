@@ -1,6 +1,5 @@
 "use client";
 import BlurFade from "@/app/magicui/ui/blur-fade";
-import Marquee from "@/app/magicui/ui/marquee";
 import { teamData } from "../../data/teamData";
 import TeamItemCard from "./TeamItemCard";
 import Slider from "react-slick";
@@ -17,6 +16,7 @@ export default class Team extends Component {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
+      swipe: true,
       speed: 3000,
       autoplaySpeed: 1000,
       responsive: [
