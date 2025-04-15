@@ -9,21 +9,21 @@ interface TeamItemCardProps {
 
 const TeamItemCard = ({ item }: TeamItemCardProps) => {
   return (
-    <div className="team-item rounded-lg border border-gray-200 shadow-md p-5 flex flex-col items-center justify-between gap-1">
-      <div className="team-img mb-5 w-[200px] h-[200px]">
+    <div className="team-item rounded-lg border border-gray-200 shadow-md p-5 mx-1 mb-1 flex flex-col items-center justify-between gap-1">
+      <div className="team-img mb-5">
         <Image
           src={`/assets/team/${item.img}`}
           alt={item.name}
-          width={200}
-          height={200}
+          width={130}
+          height={130}
           className="w-full h-full object-cover rounded-full"
         />
       </div>
       <div className="team-content flex flex-col items-center justify-center">
-        <h3 className="text-xl font-medium text-cinnabar-600 mb-2 max-w-[200px] text-truncate text-center">
+        <h3 className="text-md md:text-lg lg:text-xl text-center font-medium text-cinnabar-600 mb-2 text-truncate">
           {item.name}
         </h3>
-        <p className="text-sm text-gray-600 mb-2">{item.position}</p>
+        <p className="text-sm text-center text-gray-600 mb-2">{item.position}</p>
         <div className="team-social flex gap-2">
           <a
             href={`https://www.linkedin.com/in/${item.linkedin}`}

@@ -18,7 +18,6 @@ export default class Companies extends Component {
       autoplay: true,
       speed: 7000,
       autoplaySpeed: 1000,
-      cssEase: "linear",
       responsive: [
         {
           breakpoint: 1024,
@@ -49,7 +48,6 @@ export default class Companies extends Component {
         },
       ],
     };
-
     return (
       <div className="mx-auto">
         <Slider {...settings}>
