@@ -34,21 +34,21 @@ const Data = () => {
             <div className="p-2">
               <div className="flex gap-2">
                 <Link
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/company/je-ensias/"
                   target="_blank"
                   className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
                 >
                   <FaLinkedinIn />
                 </Link>
                 <Link
-                  href="https://www.facebook.com/"
+                  href="https://web.facebook.com/profile.php?id=61575353780407"
                   target="_blank"
                   className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
                 >
                   <FaFacebookF />
                 </Link>
                 <Link
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/junior.entreprise.ensias/"
                   target="_blank"
                   className="flex items-center justify-center w-8 h-8 text-white bg-gradient-to-r from-cinnabar-950 to-cinnabar-500 rounded-full"
                 >

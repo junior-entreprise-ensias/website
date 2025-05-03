@@ -8,7 +8,6 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 
-
 const navigation = navigationData;
 
 function Navbar() {
@@ -82,31 +81,43 @@ function Navbar() {
         >
           <div className="flex gap-2">
             <Link
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/je-ensias/"
               target="_blank"
               className={
                 `flex items-center justify-center w-8 h-8 text-white rounded-full` +
-                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+                ` ${
+                  isScrolled
+                    ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500"
+                    : "bg-transparent"
+                }`
               }
             >
               <FaLinkedinIn />
             </Link>
             <Link
-              href="https://www.facebook.com/"
+              href="https://web.facebook.com/profile.php?id=61575353780407"
               target="_blank"
               className={
                 `flex items-center justify-center w-8 h-8 text-white rounded-full` +
-                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+                ` ${
+                  isScrolled
+                    ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500"
+                    : "bg-transparent"
+                }`
               }
             >
               <FaFacebookF />
             </Link>
             <Link
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/junior.entreprise.ensias/"
               target="_blank"
               className={
                 `flex items-center justify-center w-8 h-8 text-white rounded-full` +
-                ` ${isScrolled ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500" : "bg-transparent"}`
+                ` ${
+                  isScrolled
+                    ? "bg-gradient-to-r from-cinnabar-950 to-cinnabar-500"
+                    : "bg-transparent"
+                }`
               }
             >
               <FaInstagram />
