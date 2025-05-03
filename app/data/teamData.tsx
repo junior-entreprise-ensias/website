@@ -105,5 +105,19 @@ export const teamData: TeamItem[] = [
     img: "salma.jpg",
     linkedin: "salma-zaime-5776a6285",
     github: "salmazaime",
+  },
+  {
+    name: "Anass BENSMINA",
+    position: "Events Manager",
+    img: "bensmina.jpg",
+    linkedin: "anass-bensmina",
+    github: "ss-killer",
+  },
+  {
+    name: "Malak ARHNOUCH",
+    position: "Events Manager",
+    img: "arhnouch.jpg",
+    linkedin: "malak-arhnouch-recherchestage-data-software",
+    github: "Malak0000",
   }
 ];
