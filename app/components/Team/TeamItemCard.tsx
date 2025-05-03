@@ -9,7 +9,7 @@ interface TeamItemCardProps {
 
 const TeamItemCard = ({ item }: TeamItemCardProps) => {
   return (
-    <div className="team-item h-[360px] rounded-lg border border-gray-200 shadow-md p-5 mx-1 mb-7 flex flex-col items-center justify-center gap-1">
+    <div className="team-item h-[360px] rounded-lg border border-gray-200 shadow-md mr-2 p-5 mx-1 mb-7 flex flex-col items-center justify-center gap-1">
       <div className="team-img mb-5">
         <Image
           src={`/assets/team/${item.img}`}
