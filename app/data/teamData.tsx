@@ -65,6 +65,13 @@ export const teamData: TeamItem[] = [
     github: "Shiame",
   },
   {
+    name: "Soufiane BOUSLIKHANE",
+    position: "Project Manager",
+    img: "soufiane.jpg",
+    linkedin: "soufianebouslikhane",
+    github: "Soufianebouslikhane",
+  },
+  {
     name: "Idriss EL ABIDI",
     position: "Training Manager",
     img: "elabidi.jpg",
@@ -75,8 +82,8 @@ export const teamData: TeamItem[] = [
     name: "Youssef ELGARCH",
     position: "Training Manager",
     img: "youssef.jpg",
-    linkedin: "yousef-elgarch1",
-    github: "yousef-elgarch",
+    linkedin: "yousef-elgarch",
+    github: "yousef-elgarch1",
   },
   {
     name: "Amine GOUMHAND",
