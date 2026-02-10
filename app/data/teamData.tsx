@@ -67,7 +67,7 @@ export const teamData: TeamItem[] = [
   {
     name: "Aymane EL AKKIOUI",
     position: "Design Manager",
-    img: "Aymane2.jpg",
+    img: "Aymen.jpeg",
     linkedin: "aymane-el-akkioui-492982250",
     github: "AymaneAki",
   },
