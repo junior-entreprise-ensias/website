@@ -18,7 +18,7 @@ export const teamData: TeamItem[] = [
   {
     name: "Malak ARHNOUCH",
     position: "General Secretary",
-    img: "arhnouch.jpg",
+    img: "malak.jpeg",
     linkedin: "malak-arhnouch-recherchestage-data-software",
     github: "Malak0000",
   },
