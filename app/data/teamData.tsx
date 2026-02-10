@@ -32,7 +32,7 @@ export const teamData: TeamItem[] = [
   {
     name: "Salma ALLOUCH",
     position: "Sales Manager",
-    img: "salma.jpg",
+    img: "Salma2.jpeg",
     linkedin: "salma-allouch-74b57132a",
     github: "salma-allouch",
   },
@@ -67,7 +67,7 @@ export const teamData: TeamItem[] = [
   {
     name: "Aymane EL AKKIOUI",
     position: "Design Manager",
-    img: "ayman.jpg",
+    img: "Aymane2.jpg",
     linkedin: "aymane-el-akkioui-492982250",
     github: "AymaneAki",
   },

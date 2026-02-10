@@ -65,7 +65,7 @@ const footer = () => {
                 title="President"
                 className="text-base font-normal text-white"
               >
-                +212 7 08 30 12 69 (P)
+                +212 7 71 98 43 83 (P)
               </Link>
             </div>
             <div className="flex gap-2 mt-5">
@@ -75,7 +75,7 @@ const footer = () => {
                 title="Vice President"
                 className="text-base font-normal text-white"
               >
-                +212 6 74 98 44 99 (VP)
+                +212 6 27 96 76 34 (VP)
               </Link>
             </div>
             <div className="flex gap-2 mt-5">
