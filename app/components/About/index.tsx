@@ -61,11 +61,11 @@ const About = () => {
                 <div className="ps-4">
                   <h5 className="text-lg">Call to ask any question</h5>
                   <Link
-                    href="tel:+212708301269"
+                    href="tel:+212771984383"
                     title="President"
                     className="text-cinnabar-600 text-lg mb-0"
                   >
-                    +212 7 08 30 12 69
+                    +212 7 71 98 43 83
                   </Link>
                   <span className="mx-2">or</span>
                   <Link
