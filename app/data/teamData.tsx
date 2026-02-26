@@ -6,7 +6,7 @@ export const teamData: TeamItem[] = [
     position: "President",
     img: "bensmina2.jpg",
     linkedin: "anass-bensmina",
-    github: "ss-kitller",
+    github: "Bensmina-Anass",
   },
   {
     name: "Ayoub KADDOURI",
