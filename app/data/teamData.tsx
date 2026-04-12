@@ -61,7 +61,7 @@ export const teamData: TeamItem[] = [
     name: "Oussama WASSIF",
     position: "Public Relations",
     img: "oussama.png",
-    linkedin: "anas-houhou-27b7081b3",
+    linkedin: "oussamawassif",
     github: "oussama-gd",
   },
   {
